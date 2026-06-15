@@ -58,6 +58,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=${TZ}
+      - ND_SCANSCHEDULE=1h
+      - ND_SESSIONTIMEOUT=24h
     volumes:
       - ./${SERVICE}-data/data:/data
       - /path/to/your/music/folder:/music:ro # Adjust to your liking
